@@ -1,0 +1,60 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<c:url value="/css/site.css" var="cssUrl" />
+<link rel="stylesheet" href="${cssUrl}" />
+<meta charset="UTF-8">
+<title><c:out value="${pageTitle}" /></title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class = "header">
+			<c:url var="npgeekimg" value="/img/logo.png" />
+			<img src="${npgeekimg}" />
+		</div>
+
+		<nav>
+			<ul>
+				<c:url var="homeUrl" value="/" />
+				<li><a href="${homeUrl}">Home</a></li>
+				
+				<c:choose>
+				<c:when test="${submit == null}">
+					<c:url var="surveyUrl" value="/survey" />
+				</c:when>
+				<c:otherwise>
+					<c:url var="surveyUrl" value="/surveyResult" />
+				</c:otherwise>
+				</c:choose>
+
+				<li><a href="${surveyUrl}">Survey</a></li>
+			</ul>
+
+		</nav>
+		
+	<c:if test="${message != null}">
+		<div class="alert alert-success" role="alert">
+			<c:out value="${message}"/>
+		</div>
+	</c:if>		

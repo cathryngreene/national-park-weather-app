@@ -1,0 +1,208 @@
+/* header & navigation */
+
+nav {
+background-color: SeaGreen;
+margin-bottom: 20px;
+padding: 5px;
+height: 40px;
+}
+
+nav ul {
+float: left;
+}
+
+nav li {
+list-style-type: none;
+color: white;
+margin-right: 30px;
+margin-bottom: 10px;
+font-size: 1.3em;
+float: left;
+}
+
+nav li a {
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+
+nav li a:hover {
+text-decoration: underline;
+}
+
+.header img {
+	width: 40%;
+}
+
+/* page styles */
+
+div.parkContainer {
+	display: flex;
+}
+
+div.parkListImage img {
+	width: 350px;
+	margin: 1em 1em 1em 0em;
+}
+
+div.parkInfo {
+	text-align: left;
+	margin: .6em 0em 0em 1.5em;
+}
+
+a.parkName {
+	font-size: 1.5em;
+	color: LimeGreen;
+	text-decoration: none;	
+}
+
+.parkState {
+	font-weight: 500;
+	font-size: 1.5em;
+	color: SeaGreen;
+}
+
+.parkDescription {
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+.spacerBlock {
+	height: .5em;
+	width: .5em;
+}
+
+.horizontalSpacer {
+	display:inline-block; 
+	width: .75em;
+}
+
+/* detail page */
+
+div.parkDetailImage img {
+	width: 600px;
+	margin: 1em 1.75em 1em 0em;
+}
+
+div.parkDetailContainer {
+	padding-left: 5px;
+	text-align: left;
+	margin: .5em 0em 1em 0em;
+}
+
+.parkDetailName {
+	font-size: 2.125em;
+	color: LimeGreen;
+}
+
+.detailLabel {	
+	font-size: 1.25em;
+	font-weight: 500;
+	color: SeaGreen;
+}
+
+.detailValue {
+	font-size: 1.25em;
+	font-weight: 350;
+}
+
+div.detailColumnContainer {
+	display: flex;
+	padding: .5em 0em 1.5em 0em;
+}
+
+div.leftDetailColumn {
+	padding-right: 2.5em;
+}
+.parkDetailQuote {
+	font-size: 1.5em;
+	color: SeaGreen;
+	font-style: italic;
+}
+
+.parkDetailQuoteSource {
+	font-size: 1.25em;
+	color: SeaGreen;
+}
+.quoteBlock {
+	width: 35em;
+}
+.horizontalDetailSpacer {
+	display:inline-block; 
+	width: 2em;
+}
+.detailDescription {
+	padding: .25em 5em 2em 0em;
+}
+.weatherContainer {
+	display: flex;
+	padding: 1.5em 0em 3em 0em;
+}
+.dailyContainer {
+	padding: 0em 1.5em 0em 1.5em;
+	border-right: 1px solid SeaGreen;
+}
+
+/* survey */
+
+.surveyResultImg img {
+	width: 200px;
+	padding: .5em 1.5em .5em 0em;
+}
+.surveyLabel {	
+	font-size: 1.25em;
+	font-weight: 500;
+	color: SeaGreen;
+	text-algin: left;
+}
+.surveyLabelRank {	
+	font-size: 1.25em;
+	font-weight: 500;
+	color: LimeGreen;
+	text-algin: left;
+}
+
+.surveyResultHeadline {	
+	font-size: 1.875em;
+	font-weight: 500;
+	color: SeaGreen;
+	text-algin: left;
+}
+.verticalSpacer {
+	height: 10px;
+	width: 10px;
+}
+
+/* weather */
+
+.forecastImg img{
+	width: 12em;
+
+}
+
+.forecastImgDayOne img{
+	width: 18em;
+}
+
+.weatherHigh {	
+	font-size: 1.25em;
+	font-weight: 500;
+	color: SeaGreen;
+	text-algin: left;
+	padding-left: 1.5em;
+}
+
+.weatherLow {	
+	font-size: 1.25em;
+	font-weight: 500;
+	color: LimeGreen;
+	text-algin: left;
+	padding-left: 1.5em;
+}
+
+.weatherAvdisory {
+	font-size: 1.5em;
+	color: SeaGreen;
+	font-style: italic;
+	padding-left: 1.25em;
+}
